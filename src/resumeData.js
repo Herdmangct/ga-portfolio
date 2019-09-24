@@ -1,5 +1,5 @@
 let resumeData = {
-  imagebaseurl: "https://www.linkedin.com/in/graham-ct-herdman/",
+  imagebaseurl: "https://herdmangct.github.io/ga-portfolio/",
   name: "Graham Herdman",
   profileImage: "images/profile-image.jpg",
   role: "Software Engineer and Data Scientist",
