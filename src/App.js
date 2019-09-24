@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import Testimonials from "./components/Testimonials";
+import ContactUs from "./components/Contactus";
+import Footer from "./components/Footer";
+import resumeData from "./resumeData";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header resumeData={resumeData} />
+        <About resumeData={resumeData} />
+        <Resume resumeData={resumeData} />
+        {/*TODO PORTFOLIO: CLEAN UP IMAGES AND CONTENT*/}
+        <Portfolio resumeData={resumeData} />
+        <Testimonials resumeData={resumeData} />
+        {/*TODO PORTFOLIO: ADD TWITTER API FOR MY LATEST TWEETS*/}
+        <ContactUs resumeData={resumeData} />
+        <Footer resumeData={resumeData} />
+      </div>
+    );
+  }
 }
-
 export default App;
