@@ -1,7 +1,7 @@
 let resumeData = {
   imagebaseurl: "https://www.linkedin.com/in/graham-ct-herdman/",
   name: "Graham Herdman",
-  profileImage: "/images/profile-image.jpg",
+  profileImage: "images/profile-image.jpg",
   role: "Software Engineer and Data Scientist",
   // #1 TODO:
   roleDescription: "#1 TODO:", // "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
