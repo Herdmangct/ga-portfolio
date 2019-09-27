@@ -28,7 +28,12 @@ class Resume extends Component {
                             {item.MonthOfPassing} {item.YearOfPassing}
                           </em>
                         </p>
-                        <p>{item.Achievements}</p>
+                        <p>
+                          {item.Achievements &&
+                            item.Achievements.map(item => {
+                              return <div>{item}</div>;
+                            })}
+                        </p>
                       </div>
                     </div>
                   );
