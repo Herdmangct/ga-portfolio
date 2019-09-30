@@ -57,7 +57,7 @@ class Header extends Component {
                 {resumeData.roleDescription}
                 <a className="smoothscroll" href="#about">
                   {" "}
-                  start scrolling
+                  Start scrolling
                 </a>{" "}
                 and learn more{" "}
                 <a className="smoothscroll" href="#about">

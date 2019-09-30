@@ -80,7 +80,7 @@ header .banner-text h3 {
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-  color: #f09c00;
+  color: #291037;
   font-weight: bold;
 }
 header .banner-text hr {
@@ -1097,7 +1097,7 @@ footer a:visited {
 }
 footer a:hover,
 footer a:focus {
-  color: #fff;
+  color: #f09c00;
 }
 
 /* copyright */
@@ -1135,7 +1135,7 @@ footer .social-links li {
   margin: 0;
   padding: 0;
   margin-left: 42px;
-  color: #f06000;
+  color: #f09c00;
 }
 
 footer .social-links li:first-child {
@@ -1169,5 +1169,5 @@ footer .social-links li:first-child {
   border-radius: 100%;
 }
 #go-top a:hover {
-  background-color: #0f9095;
+  background-color: #f09c00;
 }
