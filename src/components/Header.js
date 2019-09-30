@@ -53,7 +53,7 @@ class Header extends Component {
                 Hi, I'm {resumeData.name.split(" ")[0]}
               </h1>
               <h3>
-                I'm a Sydney based <span>{resumeData.role}</span>.{" "}
+                I'm a Sydney based <span>{resumeData.role}</span>{" "}
                 {resumeData.roleDescription}
                 <a className="smoothscroll" href="#about">
                   {" "}
