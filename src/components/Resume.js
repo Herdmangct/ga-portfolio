@@ -18,7 +18,7 @@ class Resume extends Component {
               {resumeData.education &&
                 resumeData.education.map(item => {
                   return (
-                    <div className="row item">
+                    <div className="row item" key={item.specialization}>
                       <div className="twelve columns">
                         <h3>{item.UniversityName}</h3>
                         <p className="info">
@@ -28,12 +28,10 @@ class Resume extends Component {
                             {item.MonthOfPassing} {item.YearOfPassing}
                           </em>
                         </p>
-                        <p>
-                          {item.Achievements &&
-                            item.Achievements.map(item => {
-                              return <div>{item}</div>;
-                            })}
-                        </p>
+                        {item.Achievements &&
+                          item.Achievements.map((paragraph, index) => {
+                            return <div key={index}>{paragraph}</div>;
+                          })}
                       </div>
                     </div>
                   );
@@ -53,7 +51,7 @@ class Resume extends Component {
               {resumeData.work &&
                 resumeData.work.map(item => {
                   return (
-                    <div className="row item">
+                    <div className="row item" key={Math.random()}>
                       <div className="twelve columns">
                         <h3>{item.CompanyName}</h3>
                         <p className="info">
@@ -94,7 +92,7 @@ class Resume extends Component {
                   {resumeData.skills &&
                     resumeData.skills.map(item => {
                       return (
-                        <li>
+                        <li key={item.skillname}>
                           <span
                             className={`bar-expand ${item.skillname.toLowerCase()}`}
                           ></span>

@@ -15,11 +15,15 @@ class Portfolio extends Component {
                 className="bgrid-quarters s-bgrid-thirds cf"
               >
                 {resumeData.portfolio &&
-                  resumeData.portfolio.map(item => {
+                  resumeData.portfolio.map((item, index) => {
                     return (
-                      <div className="columns portfolio-item">
+                      <div className="columns portfolio-item" key={index}>
                         <div className="item-wrap">
-                          <a href={"#" + item.modal} target="_blank">
+                          <a
+                            href={"#" + item.modal}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
                             <img
                               src={`${item.imgurl}`}
                               className="item-img"
@@ -44,9 +48,13 @@ class Portfolio extends Component {
             {/* Modal Popup TODO!
         --------------------------------------------------------------- */}
             {resumeData.portfolio &&
-              resumeData.portfolio.map(item => {
+              resumeData.portfolio.map((item, index) => {
                 return (
-                  <div id={item.modal} className="popup-modal mfp-hide">
+                  <div
+                    id={item.modal}
+                    className="popup-modal mfp-hide"
+                    key={index}
+                  >
                     <img
                       className="scale-with-grid"
                       src={`${item.imgurl}`}
@@ -62,7 +70,9 @@ class Portfolio extends Component {
                     </div>
                     <div className="link-box">
                       <a href={item.link}>Details</a>
-                      <a className="popup-modal-dismiss">Close</a>
+                      <a className="popup-modal-dismiss" href="#contact">
+                        Close
+                      </a>
                     </div>
                   </div>
                 );

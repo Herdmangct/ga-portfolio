@@ -17,9 +17,9 @@ class Testimonials extends Component {
                 <div className="flexslider">
                   <ul className="slides">
                     {resumeData.testimonials &&
-                      resumeData.testimonials.map(item => {
+                      resumeData.testimonials.map((item, index) => {
                         return (
-                          <li>
+                          <li key={index}>
                             <blockquote>
                               <p>{item.quote}</p>
                               <cite>{item.name}</cite>

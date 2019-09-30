@@ -10,36 +10,36 @@ class Header extends Component {
             <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
               Show navigation
             </a>
-            <a className="mobile-btn" href="#" title="Hide navigation">
+            <a className="mobile-btn" href="#nav-wrap" title="Hide navigation">
               Hide navigation
             </a>
             <ul id="nav" className="nav">
-              <li className="current">
+              <li className="current" key="home">
                 <a className="smoothscroll" href="#home">
                   Home
                 </a>
               </li>
-              <li>
+              <li key="about">
                 <a className="smoothscroll" href="#about">
                   About
                 </a>
               </li>
-              <li>
+              <li key="resume">
                 <a className="smoothscroll" href="#resume">
                   Resume
                 </a>
               </li>
-              <li>
+              <li key="portfolio">
                 <a className="smoothscroll" href="#portfolio">
                   Works
                 </a>
               </li>
-              <li>
+              <li key="testimonials">
                 <a className="smoothscroll" href="#testimonials">
                   Testimonials
                 </a>
               </li>
-              <li>
+              <li key="contact">
                 <a className="smoothscroll" href="#contact">
                   Contact
                 </a>
@@ -71,7 +71,11 @@ class Header extends Component {
                   resumeData.socialLinks.map(item => {
                     return (
                       <li key={item.name}>
-                        <a href={item.url} target="_blank">
+                        <a
+                          href={item.url}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
                           <i className={item.className}></i>
                         </a>
                       </li>

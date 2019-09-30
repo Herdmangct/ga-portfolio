@@ -13,7 +13,11 @@ class Footer extends Component {
                   resumeData.socialLinks.map(item => {
                     return (
                       <li key={item.name}>
-                        <a href={item.url} target="_blank">
+                        <a
+                          href={item.url}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
                           <i className={item.className}></i>
                         </a>
                       </li>

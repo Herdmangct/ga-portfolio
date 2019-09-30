@@ -12,7 +12,7 @@ class About extends Component {
                 <img
                   className="profile-pic"
                   src={resumeData.profileImage}
-                  alt="profile image"
+                  alt="my profile"
                 />
               </div>
             </div>
@@ -20,7 +20,7 @@ class About extends Component {
               <h2>About Me</h2>
               {resumeData.aboutme &&
                 resumeData.aboutme.map(paragraph => {
-                  return <p>{paragraph}</p>;
+                  return <p key={paragraph.substring(0, 5)}>{paragraph}</p>;
                 })}
               <div className="row">
                 <div className="columns contact-details">

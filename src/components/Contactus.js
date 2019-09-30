@@ -18,7 +18,8 @@ class ContactUs extends Component {
           </div>
           <div className="row">
             <div className="eight columns">
-              <form action method="post" id="contactForm" name="contactForm">
+              {/* Add 'action' back to this form */}
+              <form method="post" id="contactForm" name="contactForm">
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">
@@ -100,15 +101,15 @@ class ContactUs extends Component {
                 <h4 className="widget-title">Latest Tweets</h4>
                 <ul id="twitter">
                   {resumeData.contact.recentTweets &&
-                    resumeData.contact.recentTweets.map(item => {
+                    resumeData.contact.recentTweets.map((item, index) => {
                       return (
-                        <li>
+                        <li key={index}>
                           <span>
                             {item.content}
                             <a href={item.link}> {item.link}</a>
                           </span>
                           <b>
-                            <a href="#">{item.numberOfDaysAgo}</a>
+                            <p>{item.numberOfDaysAgo}</p>
                           </b>
                         </li>
                       );
