@@ -5,7 +5,6 @@ let resumeData = {
   name: "Graham Herdman",
   profileImage: "images/profile-image.jpg",
   role: "Software Engineer and Data Scientist",
-  // #1 TODO:
   roleDescription: `with a passion for all things science and technology! 
   I love learning about new technologies and solving challenging problems. 
   My goal is to use my love for science and technology to help solve some of the world's most challenging problems!`, // "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
@@ -26,7 +25,6 @@ let resumeData = {
       className: "fa fa-twitter"
     }
   ],
-  // #2 TODO
   aboutme: [
     `I am a technically minded software engineer with a strong foundation in computer science 
   theory and practical skills in multiple programming languages (Python, JavaScript, Ruby, Java, CSS, HTML). 
@@ -35,7 +33,7 @@ let resumeData = {
   My curious nature and passion for all things science and technology can also be seen in my hobbies as I 
   frequently read non-fiction books. Notable books that I have read are “How to create a mind” by Ray Kurzweil, 
   “The Innovators” by Walter Isaacson and “Possible Minds: 25 ways of looking at AI” by John Brockman.`
-  ], // "I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
+  ],
   address: "Sydney, Australia",
   phone: "0438 568 446",
   email: "herdmanctg@outlook.com",
@@ -46,7 +44,6 @@ let resumeData = {
       specialization: "Software Engineering Immersive Course",
       MonthOfPassing: "September",
       YearOfPassing: "2019",
-      // TODO: Change to array and map it into different paragraphs
       Achievements: [
         `General Assembly’s 12 Week Software Engineering Immersive 
         Course is an intensive programming bootcamp that prepares you for the everyday 
@@ -127,13 +124,13 @@ let resumeData = {
   eget, arcu. Nullam dictum felis eu pede mollis pretium.`,
   skills: [
     {
-      skillname: "HTML5"
+      skillname: "Python"
     },
     {
-      skillname: "CSS"
+      skillname: "JavaScript"
     },
     {
-      skillname: "Reactjs"
+      skillname: "React / React Native"
     }
   ],
   portfolio: [
