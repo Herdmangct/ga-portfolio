@@ -9,7 +9,7 @@ import resumeData from "./resumeData";
 class App extends Component {
   render() {
     console.log(
-      "Fun Fact: I was born in Cape Town South Africa (Hence the picture of Cape Town)"
+      "Fun Fact: I was born in Cape Town, South Africa (Hence the picture of Cape Town)"
     );
     return (
       <div className="App">
