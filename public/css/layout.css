@@ -656,7 +656,7 @@ ul#nav li.current a {
   cursor: pointer;
 }
 .popup-modal a:hover {
-  color: #00cccc;
+  color: #f09c00;
 }
 .popup-modal a.popup-modal-dismiss {
   margin-left: 24px;

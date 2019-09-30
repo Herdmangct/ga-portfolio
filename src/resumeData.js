@@ -159,24 +159,27 @@ let resumeData = {
   portfolio: [
     {
       name: "Why Wait?",
-      smallDescription: "Order-ahead bar app",
+      smallDescription: "Order-ahead Bar App",
       description: `Built the frontend for an order-ahead bar application. I was inspired to undertake 
         this project because I have always been interested in understanding how mobile apps work. My favourite 
         part of the project was getting to know React Native really well and implementing Redux for global state 
         management (helped a lot for the favourite bar feature!).`,
-      imgurl: "images/portfolio/why_wait.png",
+      imgurl: "images/portfolio/why-wait-home.png",
       link: "https://github.com/Herdmangct/Project3",
       modal: "modal-01",
       tags: "Expo, React Native, Redux"
     },
     {
-      name: "Coffee",
-      smallDescription: "Illustrration",
-      description: "mobileapp",
-      imgurl: "images/portfolio/coffee.jpg",
-      link: "https://github.com/Herdmangct/Project3",
+      name: "Dripples",
+      smallDescription: "Idea Management Website",
+      description: `In a group of 3, we built and deployed an idea management 
+      tool on Heroku and Github Pages using a Ruby on Rails API for the backend 
+      and React for the frontend. My favourite part of this project was learning 
+      about React and Material UI.`,
+      imgurl: "images/portfolio/dripple.png",
+      link: "https://github.com/victorzw895/dripple-client",
       modal: "modal-02",
-      tags: "Expo, React Native, Redux"
+      tags: "React, Material UI, Ruby on Rails"
     },
     {
       name: "The Pantry",
@@ -191,14 +194,14 @@ let resumeData = {
     },
     {
       name: "Tic Tac Toe",
-      smallDescription: "Single Page Web Game",
+      smallDescription: "Web Game",
       description: `Built and deployed a simple Tic Tac Toe game to Github Pages. 
       Some extra features I added to make the game more engaging were animations with animate.css, 
       tech entrepreneur mode, and AI mode. The feature that I most enjoyed working on was AI mode where I 
       implemented the Minimax Algorithm in order to make the AI unbeatable (the algorithm used by the famous 
         Deep Blue AI that beat Garry Kasparov at chess in 1996).`,
       imgurl: "images/portfolio/tictactoe.png",
-      link: "https://github.com/Herdmangct/Project3",
+      link: "https://github.com/Herdmangct/0_ticktacktoe",
       modal: "modal-04",
       tags: "jQuery, HTML, CSS"
     }
