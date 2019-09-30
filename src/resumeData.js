@@ -1,3 +1,5 @@
+import React from "react";
+
 let resumeData = {
   imagebaseurl: "https://herdmangct.github.io/ga-portfolio/",
   name: "Graham Herdman",
@@ -46,49 +48,33 @@ let resumeData = {
       YearOfPassing: "2019",
       // TODO: Change to array and map it into different paragraphs
       Achievements: [
-        `During General Assemblies, 12 Week Software Engineering Immersive Course I gained skills in HTML, CSS, Javascript, jQuery, React, Node.js, Express, Ruby, Ruby on Rails and much more!`,
-        `PROJECTS (See my Github for more!)`,
-        `PROJECT #3: WHY WAIT? (MY FAVOURITE)`,
-        `TECHNOLOGIES USED:`,
-        `Expo, React Native, Redux`,
-        `DESCRIPTION:`,
-        `Built the frontend for an order-ahead bar application. I was inspired to undertake this project 
-      because I have always been interested in understanding how mobile apps work. My favourite part of 
-      the project was getting to know React Native really well and implementing Redux for global state management 
-      (helped a lot for the favourite bar feature!).`,
-        `GITHUB LINK: https://github.com/Herdmangct/Project3`,
-        `DEPLOYED LINK: https://expo.io/@herdmangct/general_assembly_final_project (Please see 
-      instructions on Github page as to how you can get the app working on your Android device).`,
-        `PROJECT #2: THE PANTRY`,
-        `TECHNOLOGIES USED:`,
-        `Ruby on Rails, PostgreSQL, jQuery, HTML, CSS, Bootstrap`,
-        `DESCRIPTION:`,
-        `Built and deployed an inventory management system for small restaurants with Ruby on Rails for the backend and jQuery for the frontend. My favourite part of this project was learning to work with Ruby on Rails and gaining experience with backend web development.
-      GITHUB LINK: https://github.com/Herdmangct/project1
-      DEPLOYED LINK: https://the1pantry.herokuapp.com/`,
-        `PROJECT #1: TIC TAC TOE`,
-        `TECHNOLOGIES USED:`,
-        `HTML, CSS, Javascript, jQuery`,
-        `DESCRIPTION:`,
-        `Built and deployed a simple Tic Tac Toe game to Github Pages. Some extra features I added to make the game more engaging were animations with animate.css, tech entrepreneur mode, and AI mode. The feature that I most enjoyed working on was AI mode where I implemented the Minimax Algorithm in order to make the AI unbeatable (the algorithm used by the famous Deep Blue AI that beat Garry Kasparov at chess in 1996).
-      GITHUB LINK: https://github.com/Herdmangct/0_ticktacktoe
-      DEPLOYED LINK: https://herdmangct.github.io/0_ticktacktoe/`
+        `General Assembly’s 12 Week Software Engineering Immersive 
+        Course is an intensive programming bootcamp that prepares you for the everyday 
+        challenges faced by software engineers on the job. During my time in the course I gained skills 
+        in HTML, CSS, Javascript, jQuery, React, Node.js, Express, Ruby, Ruby on Rails and much more!`
       ]
     },
     {
       UniversityName: "The University of Sydney",
-      specialization: "Bachelor of Commerce and Bachelor of Science",
+      specialization:
+        "Bachelor of Commerce and Bachelor of Science - Computer Science, Mathematics, Finance, Accounting",
       MonthOfPassing: "November",
       YearOfPassing: "2018",
       Achievements: [
-        `Majors: Computer Science, Mathematics, Finance, Accounting
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                    eu, pretium quis, sem. Nulla consequat massa quis enim.
-                    Donec pede justo, fringilla vel, aliquet nec, vulputate
-                    eget, arcu. Nullam dictum felis eu pede mollis pretium.`
+        `At university, I started studying a Commerce degree with majors 
+        in accounting and finance because I was interested in how businesses and the economy worked. 
+        However, half-way through my Commerce degree, I felt that there was something missing because 
+        I had always been passionate about science and technology and so I changed to a double degree in 
+        Commerce and Science to satisfy my curiosity in those areas. `,
+        <br />,
+        `I chose Computer Science and Mathematics 
+        as my science majors because I believe they are the two best tools humans have created for figuring out 
+        the world. The more I learned about these two areas of science the more I was sure I’d want to work in a 
+        scientific/technological field.`,
+        <br />,
+        `Through my university degree, I gained strong foundations in computer science theory (algorithms and data structures), 
+        machine learning fundamentals and 
+        exposure to technologies such as Python, Java and AWS EC2.`
       ]
     },
     {
@@ -98,46 +84,40 @@ let resumeData = {
       YearOfPassing: "2018",
       Achievements: [
         `During General Assembly's, 10 Week Part-time Data Science Course I gained strong skills in 
-      Python, Pandas, Scikit-learn, data analysis, and machine learning.
-      FINAL PROJECT: LOAN CLASSIFICATION
-      TECHNOLOGIES USED:
-      Python, Pandas, Matplotlib, Jupyter Notebook
-      DESCRIPTION:
-      I used Scikit learn, Pandas and Matplotlib to implement a logistic regression and a 
-      random forest supervised classification model to classify loans in Kaggle's Lending Club Loan Dataset 
-      as either high risk or low risk.
-      GITHUB LINK: https://github.com/Herdmangct/General-Assembly-Final-Project`
+      Python, Pandas, Scikit-learn, data analysis, and machine learning. This course inspired me to under take further study into 
+      machine learning through my university subjects. Ever since then I have been very interested in and passionate about 
+      machine learning and artificial intelligence.`
       ]
     }
   ],
-  work: [
-    {
-      CompanyName: "Some Company",
-      specialization: "Some specialization",
-      MonthOfLeaving: "Jan",
-      YearOfLeaving: "2018",
-      Achievements: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-      natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-      eu, pretium quis, sem. Nulla consequat massa quis enim.
-      Donec pede justo, fringilla vel, aliquet nec, vulputate
-      eget, arcu. Nullam dictum felis eu pede mollis pretium.`
-    },
-    {
-      CompanyName: "Some Company",
-      specialization: "Some specialization",
-      MonthOfLeaving: "Jan",
-      YearOfLeaving: "2018",
-      Achievements: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-      natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-      eu, pretium quis, sem. Nulla consequat massa quis enim.
-      Donec pede justo, fringilla vel, aliquet nec, vulputate
-      eget, arcu. Nullam dictum felis eu pede mollis pretium.`
-    }
-  ],
+  // work: [
+  //   {
+  //     CompanyName: "Some Company",
+  //     specialization: "Some specialization",
+  //     MonthOfLeaving: "Jan",
+  //     YearOfLeaving: "2018",
+  //     Achievements: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  //     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+  //     natoque penatibus et magnis dis parturient montes, nascetur
+  //     ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+  //     eu, pretium quis, sem. Nulla consequat massa quis enim.
+  //     Donec pede justo, fringilla vel, aliquet nec, vulputate
+  //     eget, arcu. Nullam dictum felis eu pede mollis pretium.`
+  //   },
+  //   {
+  //     CompanyName: "Some Company",
+  //     specialization: "Some specialization",
+  //     MonthOfLeaving: "Jan",
+  //     YearOfLeaving: "2018",
+  //     Achievements: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  //     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+  //     natoque penatibus et magnis dis parturient montes, nascetur
+  //     ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+  //     eu, pretium quis, sem. Nulla consequat massa quis enim.
+  //     Donec pede justo, fringilla vel, aliquet nec, vulputate
+  //     eget, arcu. Nullam dictum felis eu pede mollis pretium.`
+  //   }
+  // ],
   skillsDescription: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
   natoque penatibus et magnis dis parturient montes, nascetur
@@ -205,63 +185,62 @@ let resumeData = {
       modal: "modal-04",
       tags: "jQuery, HTML, CSS"
     }
-  ],
-  testimonials: [
-    {
-      quote: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-      natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-      eu, pretium quis, sem. Nulla consequat massa quis enim.`,
-      name: "Some technical guy"
-    },
-    {
-      quote: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-      natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-      eu, pretium quis, sem. Nulla consequat massa quis enim.`,
-      name: "Some technical guy"
-    },
-    {
-      quote: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-        natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-        eu, pretium quis, sem. Nulla consequat massa quis enim.`,
-      name: "Some technical guy"
-    }
-  ],
-  contact: {
-    leadHeader: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-  quae ab illo inventore veritatis et quasi architecto beatae
-  vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-  voluptas sit aspernatur aut odit aut fugit.`,
-    recentTweets: [
-      {
-        content: `This is Photoshop's version of Lorem Ipsum. Proin gravida
-        nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-        quis bibendum auctor, nisi elit consequat ipsum`,
-        link: `http://t.co/CGIrdxIlI3`,
-        numberOfDaysAgo: `2 Days Ago`
-      },
-      {
-        content: `This is Photoshop's version of Lorem Ipsum. Proin gravida
-        nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-        quis bibendum auctor, nisi elit consequat ipsum`,
-        link: `http://t.co/CGIrdxIlI3`,
-        numberOfDaysAgo: `3 Days Ago`
-      },
-      {
-        content: `This is Photoshop's version of Lorem Ipsum. Proin gravida
-        nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-        quis bibendum auctor, nisi elit consequat ipsum`,
-        link: `http://t.co/CGIrdxIlI3`,
-        numberOfDaysAgo: `3 Days Ago`
-      }
-    ]
-  }
+  ]
+  // testimonials: [
+  //   {
+  //     quote: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  //     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+  //     natoque penatibus et magnis dis parturient montes, nascetur
+  //     ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+  //     eu, pretium quis, sem. Nulla consequat massa quis enim.`,
+  //     name: "Some technical guy"
+  //   },
+  //   {
+  //     quote: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  //     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+  //     natoque penatibus et magnis dis parturient montes, nascetur
+  //     ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+  //     eu, pretium quis, sem. Nulla consequat massa quis enim.`,
+  //     name: "Some technical guy"
+  //   },
+  //   {
+  //     quote: `My Graham is a really good programmer. I haven't seen any of his work yet, but he drew
+  //     a picture when he was six years old of a penguin drinking beer in a chinese restaurant and it was clear the
+  //     potential for slight wisdom and misguided creativity were there... i'm not sure what all that has to do with
+  //     websites but I hope it helped!`,
+  //     name: "Graham's Mother"
+  //   }
+  // ],
+  // contact: {
+  //   leadHeader: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+  // accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+  // quae ab illo inventore veritatis et quasi architecto beatae
+  // vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+  // voluptas sit aspernatur aut odit aut fugit.`,
+  //   recentTweets: [
+  //     {
+  //       content: `This is Photoshop's version of Lorem Ipsum. Proin gravida
+  //       nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+  //       quis bibendum auctor, nisi elit consequat ipsum`,
+  //       link: `http://t.co/CGIrdxIlI3`,
+  //       numberOfDaysAgo: `2 Days Ago`
+  //     },
+  //     {
+  //       content: `This is Photoshop's version of Lorem Ipsum. Proin gravida
+  //       nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+  //       quis bibendum auctor, nisi elit consequat ipsum`,
+  //       link: `http://t.co/CGIrdxIlI3`,
+  //       numberOfDaysAgo: `3 Days Ago`
+  //     },
+  //     {
+  //       content: `This is Photoshop's version of Lorem Ipsum. Proin gravida
+  //       nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+  //       quis bibendum auctor, nisi elit consequat ipsum`,
+  //       link: `http://t.co/CGIrdxIlI3`,
+  //       numberOfDaysAgo: `3 Days Ago`
+  //     }
+  //   ]
+  // }
 };
 
 export default resumeData;

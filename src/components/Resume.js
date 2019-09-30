@@ -30,8 +30,13 @@ class Resume extends Component {
                         </p>
                         {item.Achievements &&
                           item.Achievements.map((paragraph, index) => {
-                            return <div key={index}>{paragraph}</div>;
+                            return (
+                              <div key={index}>
+                                <div>{paragraph}</div>
+                              </div>
+                            );
                           })}
+                        <br />
                       </div>
                     </div>
                   );
@@ -41,7 +46,7 @@ class Resume extends Component {
           {/* End Education */}
           {/* Work
       ----------------------------------------------- */}
-          <div className="row work">
+          {/* <div className="row work">
             <div className="three columns header-col">
               <h1>
                 <span>Experience</span>
@@ -67,7 +72,7 @@ class Resume extends Component {
                   );
                 })}
             </div>
-          </div>
+          </div> */}
           {/* End Work */}
           {/* Skills
       ----------------------------------------------- */}
@@ -78,7 +83,7 @@ class Resume extends Component {
               </h1>
             </div>
             <div className="nine columns main-col">
-              <p>
+              {/* <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae
@@ -86,13 +91,13 @@ class Resume extends Component {
                 voluptas sit aspernatur aut odit aut fugit, sed quia
                 consequuntur magni dolores eos qui ratione voluptatem sequi
                 nesciunt.
-              </p>
+              </p> */}
               <div className="bars">
                 <ul className="skills">
                   {resumeData.skills &&
-                    resumeData.skills.map(item => {
+                    resumeData.skills.map((item, index) => {
                       return (
-                        <li key={item.skillname}>
+                        <li key={index}>
                           <span
                             className={`bar-expand ${item.skillname.toLowerCase()}`}
                           ></span>
