@@ -70,7 +70,13 @@ class Portfolio extends Component {
                       </span>
                     </div>
                     <div className="link-box">
-                      <a href={item.link}>Details</a>
+                      <a
+                        href={item.link}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Details
+                      </a>
                       <a className="popup-modal-dismiss" href="#contact">
                         Close
                       </a>
